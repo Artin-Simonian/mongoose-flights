@@ -22,6 +22,7 @@ async function show(req, res){
 }
 
 
+
 async function create(req, res) {
   req.body.nowShowing = !!req.body.nowShowing;
 
