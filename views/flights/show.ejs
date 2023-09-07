@@ -1,3 +1,5 @@
+
+
 <a href="/flights">All Flights &nbsp;</a>|
 <a href="/">Home</a>
 
@@ -19,7 +21,11 @@
     <option value="LAX">LAX</option>
     <option value="SAN">SAN</option>
   </select>
-  <input type="date" name="arrival" />
+  <input type="date" name="arrival" /> 
+  <br>
+  
+<label for="seat">Seat:</label> 
+<input name="seat" required pattern="[A-F][1-9]\d?">
   <input type="submit" />
 </form>
 
@@ -29,3 +35,6 @@
   <td><p><%= d.airport %></p></td>
 </table>
 <% }) %>
+
+
+
