@@ -31,10 +31,10 @@ async function create(req, res) {
     res.redirect("/flights");
   } catch (err) {
     console.log(err);
-    res.render("flights/new", { errorMsg: err.message });
+    res.render("flights/new");
   }
 }
 
 function newFlight(req, res) {
-  res.render("flights/new", { errorMsg: "" });
+  res.render("flights/new");
 }
